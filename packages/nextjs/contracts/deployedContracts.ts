@@ -291,7 +291,7 @@ const deployedContracts = {
   },
   11155111: {
     web3Food: {
-      address: "0xBb836029fBF38a1D4Dc80dbF2ddD12956F44828d",
+      address: "0x38c3B22DF6CCC581D8E7d700766723401A43a330",
       abi: [
         {
           inputs: [
