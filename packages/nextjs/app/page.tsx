@@ -27,7 +27,7 @@ const Home: NextPage = () => {
             <figcaption className="mt-10 flex flex-col items-center">
               <div className="avatar">
                 <div className="w-20 rounded-full mx-auto">
-                  <Image alt="myPhoto" src="/Myphoto.jpg" height={200} width={200} />
+                  <Image alt="myPhoto" src="/myPhoto.jpg" height={200} width={200} />
                 </div>
               </div>
               <div className="mt-4 flex items-center justify-center space-x-3 text-base">
