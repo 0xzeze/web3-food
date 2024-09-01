@@ -14,6 +14,8 @@ const AdminPanel = () => {
 
   const unpreparedOrders = data ? data.filter(order => !order.isPrepared) : [];
 
+  console.log(unpreparedOrders);
+
   return (
     <>
       <div className="overflow-x-auto mx-auto my-10">

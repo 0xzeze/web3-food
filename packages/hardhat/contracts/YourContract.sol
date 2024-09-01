@@ -34,6 +34,7 @@ contract web3Food {
         bool isPrepared;
         address buyer;
         string tableId;
+        uint256 orderId;
     }
 
     modifier onlyOwner() {
@@ -59,7 +60,7 @@ contract web3Food {
         require(_index < foods.length, "Invalid food index");
         require(msg.value >= foods[_index].price, "Insufficient funds");
         require(keccak256(abi.encodePacked(tableId)) != keccak256(abi.encodePacked("")), "Please enter a table!");
-        order memory newOrder = order(foods[_index].name, foods[_index].price, false, msg.sender, tableId);
+        order memory newOrder = order(foods[_index].name, foods[_index].price, false, msg.sender, tableId,orderId);
         orders.push(newOrder);
         emit FoodBought(msg.sender, foods[_index].name, block.timestamp, tableId, orderId);
         orderId++;

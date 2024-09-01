@@ -291,7 +291,7 @@ const deployedContracts = {
   },
   11155111: {
     web3Food: {
-      address: "0x38c3B22DF6CCC581D8E7d700766723401A43a330",
+      address: "0x83a1E034a4B70cb8990a980E6cB2A587db55b313",
       abi: [
         {
           inputs: [
@@ -454,6 +454,11 @@ const deployedContracts = {
                   internalType: "string",
                   name: "tableId",
                   type: "string",
+                },
+                {
+                  internalType: "uint256",
+                  name: "orderId",
+                  type: "uint256",
                 },
               ],
               internalType: "struct web3Food.order[]",
