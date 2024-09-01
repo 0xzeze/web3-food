@@ -29,7 +29,7 @@ const AdminPanel = () => {
             </tr>
           </thead>
           <tbody>
-            {unpreparedOrders.map((order, index) => (
+            {unpreparedOrders?.map((order, index) => (
               <tr key={index}>
                 <td>{index + 1}</td>
                 <td>{order.name}</td>
